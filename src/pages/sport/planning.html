@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASSRA | Planning</title>
+  <link rel="icon" href="../../../picture/logo_ASSRA.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img class="logo-img" src="../../../picture/logo_ASSRA.png" alt="ASSRA" />
+      <div class="brand-text">
+        <span class="brand-name">ASSRA</span>
+        <span class="brand-tagline">Sauvetage · Secourisme  </span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="../../../index.html">Accueil</a>
+      <div class="nav-item">
+        <a class="is-active" href="groupes-sportifs.html">Sport <span class="nav-caret" aria-hidden="true"></span></a>
+        <div class="submenu">
+          <a href="groupes-sportifs.html">Groupes sportifs</a>
+          <a href="planning.html">Planning</a>
+          <a href="calendrier.html">Calendrier des competitions</a>
+          <a href="sauvetage-cotier.html">Le sauvetage cotier, c'est quoi ?</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../secourisme/psc1.html">Formation <span class="nav-caret" aria-hidden="true"></span></a>
+        <div class="submenu">
+          <a href="../secourisme/psc1.html">PSC1</a>
+          <a href="../secourisme/pse1-pse2.html">PSE1/ PSE2</a>
+          <a href="../secourisme/bnssa.html">BNSSA</a>
+          <a href="../secourisme/entreprise.html">Entreprise</a>
+          <a href="../secourisme/infos-pratiques.html">Infos pratiques</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../stage/stages-intensifs.html">Stage <span class="nav-caret" aria-hidden="true"></span></a>
+        <div class="submenu">
+          <a href="../stage/stages-intensifs.html">Stages d'été</a>
+          <a href="../stage/team-building.html">Team building</a>
+          <a href="../stage/sur-mesure.html">Sur-mesure</a>
+        </div>
+      </div>
+      <a href="../boutique/boutique.html">Boutique</a>
+      <a href="../actualites.html">Actualites</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-ghost" href="../contact.html">Nous rejoindre</a>
+  </header>
+
+  <section class="page-section planning-page">
+    <div class="planning-shell">
+      <input type="radio" name="planning-season" id="planning-hiver" class="planning-toggle" />
+      <input type="radio" name="planning-season" id="planning-mi-saison" class="planning-toggle" />
+      <input type="radio" name="planning-season" id="planning-ete" class="planning-toggle" checked />
+
+      <details class="planning-filter" open>
+        <summary>
+          <span>Filtrer le planning</span>
+          <span class="planning-filter-summary-note">Avril / Mai / Mai / Juin / Été</span>
+        </summary>
+
+        <div class="planning-filter-body">
+          <p>Choisissez la saison a afficher.</p>
+
+          <div class="planning-options" role="radiogroup" aria-label="Choix du planning">
+            <label for="planning-hiver">Avril / Mai</label>
+
+            <label for="planning-mi-saison">Mai / Juin</label>
+
+            <label for="planning-ete">Été</label>
+          </div>
+
+        </div>
+      </details>
+
+      <div class="planning-display">
+        <article class="planning-panel planning-panel--hiver">
+          <div class="planning-panel-head">
+            <div>
+              <p class="planning-kicker">Saison actuelle</p>
+              <h2>Planning Avril/Mai</h2>
+            </div>
+            <a class="planning-download-link" href="../../../picture/PLANNING AVRIL MAI.pdf" download="planning-avril-mai-assra.pdf">Telecharger le PDF</a>
+          </div>
+          <div class="planning-pdf-shell">
+            <iframe class="planning-pdf" title="Planning Avril/Mai" src="../../../picture/PLANNING%20AVRIL%20MAI.pdf#zoom=page-width&toolbar=0&navpanes=0&scrollbar=0"></iframe>
+          </div>
+        </article>
+
+        <article class="planning-panel planning-panel--mi-saison">
+          <div class="planning-panel-head">
+            <div>
+              <p class="planning-kicker">Saison actuelle</p>
+              <h2>Planning mi-saison</h2>
+            </div>
+            <a class="planning-download-link" href="../../../picture/PLANNING MAI JUIN.pdf" download="planning-mai-juin-assra.pdf">Telecharger le PDF</a>
+          </div>
+          <div class="planning-pdf-shell">
+            <iframe class="planning-pdf" title="Planning Mai/Juin" src="../../../picture/PLANNING%20MAI%20JUIN.pdf#zoom=page-width&toolbar=0&navpanes=0&scrollbar=0"></iframe>
+          </div>
+        </article>
+
+        <article class="planning-panel planning-panel--ete">
+          <div class="planning-panel-head">
+            <div>
+              <p class="planning-kicker">Saison actuelle</p>
+              <h2>Planning d'été</h2>
+            </div>
+            <a class="planning-download-link" href="../../../picture/PLANNING ETE.pdf" download="planning-ete-assra.pdf">Telecharger le PDF</a>
+          </div>
+          <div class="planning-pdf-shell">
+            <iframe class="planning-pdf" title="Planning d'été" src="../../../picture/PLANNING%20ETE.pdf#zoom=page-width&toolbar=0&navpanes=0&scrollbar=0"></iframe>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div>
+      <h3>ASSRA</h3>
+      <p>Association Sauvetage Secourisme Royan Atlantique</p>
+      <p>Royan · Atlantique</p>
+    </div>
+    <div>
+      <h4>Contacts</h4>
+      <p>assra@outlook.fr</p>
+      <p>06 25 95 08 82</p>
+    </div>
+    <div>
+      <h4>Suivez-nous</h4>
+      <div class="social-links">
+        <a class="social-icon" href="https://www.instagram.com/lifesaving_royan/" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm5 5.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm6-2.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zm-6 4.25a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+          </svg>
+        </a>
+        <a class="social-icon" href="https://www.facebook.com/ASSRA17" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M13.5 8.5V7c0-1 .8-1.5 1.6-1.5h1.4V3h-2.2C11.9 3 10 4.5 10 7.3v1.2H8v3h2V21h3.5v-9.5H16l.5-3h-3z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+

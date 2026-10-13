@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASSRA | Contact</title>
+  <link rel="icon" href="../../picture/logo_ASSRA.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img class="logo-img" src="../../picture/logo_ASSRA.png" alt="ASSRA" />
+      <div class="brand-text">
+        <span class="brand-name">ASSRA</span>
+        <span class="brand-tagline">Sauvetage · Secourisme  </span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="../../index.html">Accueil</a>
+      <div class="nav-item">
+        <a href="sport/groupes-sportifs.html">Sport <span class="nav-caret" aria-hidden="true"></span></a>
+        <div class="submenu">
+          <a href="sport/groupes-sportifs.html">Groupes sportifs</a>
+          <a href="sport/planning.html">Planning</a>
+          <a href="sport/calendrier.html">Calendrier des competitions</a>
+          <a href="sport/sauvetage-cotier.html">Le sauvetage cotier, c'est quoi ?</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="secourisme/psc1.html">Formation <span class="nav-caret" aria-hidden="true"></span></a>
+        <div class="submenu">
+          <a href="secourisme/psc1.html">PSC1</a>
+          <a href="secourisme/pse1-pse2.html">PSE1/ PSE2</a>
+          <a href="secourisme/bnssa.html">BNSSA</a>
+          <a href="secourisme/entreprise.html">Entreprise</a>
+          <a href="secourisme/infos-pratiques.html">Infos pratiques</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="stage/stages-intensifs.html">Stage <span class="nav-caret" aria-hidden="true"></span></a>
+        <div class="submenu">
+          <a href="stage/stages-intensifs.html">Stages d'été</a>
+          <a href="stage/team-building.html">Team building</a>
+          <a href="stage/sur-mesure.html">Sur-mesure</a>
+        </div>
+      </div>
+      <a href="boutique/boutique.html">Boutique</a>
+      <a href="actualites.html">Actualites</a>
+      <a class="is-active" href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-ghost" href="contact.html">Nous rejoindre</a>
+  </header>
+
+  <section class="page-hero contact-hero">
+    <h1>Formulaire de contact</h1>
+    <p>Parlons de votre projet, d'une inscription ou d'une formation.</p>
+  </section>
+
+  <section class="page-section">
+    <div class="contact-layout">
+      <div class="contact-details">
+        <h2>Adresse</h2>
+        <p class="contact-title">Centre Nautique de Saint Palais sur Mer</p>
+        <p class="contact-address">70 av. de Pontaillac, 17420 Saint-Palais-sur-Mer</p>
+        <div class="contact-hours">
+          <h3>Horaires d'accueil</h3>
+          <p>Lundi : a definir</p>
+          <p>Mardi : a definir</p>
+          <p>Mercredi : 14h a 18h</p>
+          <p>Jeudi : a definir</p>
+          <p>Vendredi : a definir</p>
+          <p>Samedi : a definir</p>
+          <p>Dimanche : a definir</p>
+          <p>Pour les visites : sur rendez-vous</p>
+        </div>
+        <a class="btn btn-outline map-link" href="https://www.google.com/maps/search/?api=1&query=Centre%20Nautique%20de%20Saint%20Palais%20sur%20Mer%2C%2070%20av.%20de%20Pontaillac%2C%2017420%20Saint-Palais-sur-Mer" target="_blank" rel="noopener">Ouvrir dans Google Maps</a>
+      </div>
+      <div class="map-card">
+        <h2>Localisation</h2>
+        <div class="map-embed" aria-label="Carte Google Maps du Centre Nautique de Saint Palais sur Mer">
+          <iframe
+            src="https://www.google.com/maps?q=Centre%20Nautique%20de%20Saint%20Palais%20sur%20Mer%2C%2070%20av.%20de%20Pontaillac%2C%2017420%20Saint-Palais-sur-Mer&markers=45.6291%2C-1.1872&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            title="Google Maps - Centre Nautique de Saint Palais sur Mer"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section contact-form-section">
+    <div class="contact-form-head">
+      <p><strong>Mail :</strong> assra@outlook.fr</p>
+      <p><strong>Tel :</strong> 06 25 95 08 82</p>
+    </div>
+    <form class="contact-form" action="#" method="post">
+      <div class="form-row two-cols">
+        <input type="text" name="prenom" placeholder="Prenom" required />
+        <input type="text" name="nom" placeholder="Nom" required />
+      </div>
+      <div class="form-row">
+        <input type="email" name="email" placeholder="Votre mail" required />
+      </div>
+      <div class="form-row">
+        <select name="objet" required>
+          <option value="">Selectionner une option</option>
+          <option value="competition">Competition</option>
+          <option value="secourisme">Secourisme</option>
+          <option value="stages">Stages</option>
+          <option value="autres">Autres</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <textarea name="message" rows="6" placeholder="Votre message"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div>
+      <h3>ASSRA</h3>
+      <p>Association Sauvetage Secourisme Royan Atlantique</p>
+      <p>Royan · Atlantique</p>
+    </div>
+    <div>
+      <h4>Contacts</h4>
+      <p>assra@outlook.fr</p>
+      <p>06 25 95 08 82</p>
+    </div>
+    <div>
+      <h4>Suivez-nous</h4>
+      <div class="social-links">
+        <a class="social-icon" href="https://www.instagram.com/lifesaving_royan/" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm5 5.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm6-2.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zm-6 4.25a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+          </svg>
+        </a>
+        <a class="social-icon" href="https://www.facebook.com/ASSRA17" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M13.5 8.5V7c0-1 .8-1.5 1.6-1.5h1.4V3h-2.2C11.9 3 10 4.5 10 7.3v1.2H8v3h2V21h3.5v-9.5H16l.5-3h-3z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

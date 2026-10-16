@@ -36,7 +36,6 @@
           <a href="../secourisme/psc1.html">PSC1</a>
           <a href="../secourisme/pse1-pse2.html">PSE1/ PSE2</a>
           <a href="../secourisme/bnssa.html">BNSSA</a>
-          <a href="../secourisme/entreprise.html">Entreprise</a>
           <a href="../secourisme/infos-pratiques.html">Infos pratiques</a>
         </div>
       </div>
@@ -44,8 +43,7 @@
         <a href="../stage/stages-intensifs.html">Stage <span class="nav-caret" aria-hidden="true"></span></a>
         <div class="submenu">
           <a href="../stage/stages-intensifs.html">Stages d'été</a>
-          <a href="../stage/team-building.html">Team building</a>
-          <a href="../stage/sur-mesure.html">Sur-mesure</a>
+          <a href="../stage/sur-mesure.html">Autres stages</a>
         </div>
       </div>
       <a href="../boutique/boutique.html">Boutique</a>
@@ -55,74 +53,70 @@
     <a class="btn btn-ghost" href="../contact.html">Nous rejoindre</a>
   </header>
 
-  <section class="page-section planning-page">
-    <div class="planning-shell">
-      <input type="radio" name="planning-season" id="planning-hiver" class="planning-toggle" />
-      <input type="radio" name="planning-season" id="planning-mi-saison" class="planning-toggle" />
-      <input type="radio" name="planning-season" id="planning-ete" class="planning-toggle" checked />
+  <main class="schedule-page">
+    <section class="schedule-intro">
+      <div>
+        <span class="schedule-kicker">Saison actuelle</span>
+        <h1>Plannings</h1>
+      </div>
+    </section>
 
-      <details class="planning-filter" open>
-        <summary>
-          <span>Filtrer le planning</span>
-          <span class="planning-filter-summary-note">Avril / Mai / Mai / Juin / Été</span>
-        </summary>
+    <section class="schedule-board">
+      <input type="radio" name="schedule-period" id="period-avril" class="schedule-toggle" />
+      <input type="radio" name="schedule-period" id="period-mai" class="schedule-toggle" />
+      <input type="radio" name="schedule-period" id="period-ete" class="schedule-toggle" checked />
 
-        <div class="planning-filter-body">
-          <p>Choisissez la saison a afficher.</p>
+      <div class="period-tabs" role="tablist" aria-label="Choisir une période">
+        <label for="period-avril" role="tab"><strong>Avril / Mai</strong><small>PÉRIODE DE VALIDITÉ</small></label>
+        <label for="period-mai" role="tab"><strong>Mai / Juin</strong><small>PÉRIODE DE VALIDITÉ</small></label>
+        <label for="period-ete" role="tab"><strong>Été</strong><small>6 juillet → 1er septembre</small></label>
+      </div>
 
-          <div class="planning-options" role="radiogroup" aria-label="Choix du planning">
-            <label for="planning-hiver">Avril / Mai</label>
-
-            <label for="planning-mi-saison">Mai / Juin</label>
-
-            <label for="planning-ete">Été</label>
-          </div>
-
-        </div>
-      </details>
-
-      <div class="planning-display">
-        <article class="planning-panel planning-panel--hiver">
-          <div class="planning-panel-head">
-            <div>
-              <p class="planning-kicker">Saison actuelle</p>
-              <h2>Planning Avril/Mai</h2>
-            </div>
-            <a class="planning-download-link" href="../../../picture/PLANNING AVRIL MAI.pdf" download="planning-avril-mai-assra.pdf">Telecharger le PDF</a>
-          </div>
-          <div class="planning-pdf-shell">
-            <iframe class="planning-pdf" title="Planning Avril/Mai" src="../../../picture/PLANNING%20AVRIL%20MAI.pdf#zoom=page-width&toolbar=0&navpanes=0&scrollbar=0"></iframe>
+      <div class="schedule-periods">
+        <article class="schedule-period schedule-period--avril">
+          <div class="period-pdf-head"><div><span class="schedule-kicker">Période sélectionnée</span><h2>Planning Avril / Mai</h2></div><a class="schedule-download" href="../../../picture/PLANNING AVRIL MAI.pdf" download>⇩ Télécharger le PDF</a></div>
+          <div class="schedule-note"><div><span class="schedule-kicker">Période de validité</span><strong>Ce planning est valable du lundi 20 avril au samedi 9 mai.</strong></div></div>
+          <div class="weekday-grid weekday-grid--six">
+            <div class="weekday"><header>Lundi <small>4 séances</small></header><div class="session session-g3"><strong>17h30 – 18h15</strong><b>G3</b><small>Piscine</small></div><div class="session session-g2"><strong>18h15 – 19h15</strong><b>G2</b><small>Piscine</small></div><div class="session session-elite"><strong>19h – 20h30</strong><b>G1 / G1+ / Masters Elite</b><small>Piscine</small></div><div class="session session-bnssa"><strong>20h30 – 22h</strong><b>BNSSA</b><small>Piscine</small></div></div>
+            <div class="weekday"><header>Mardi <small>Pas de séance</small></header></div>
+            <div class="weekday"><header>Mercredi <small>4 séances</small></header><div class="session session-g1"><strong>14h – 15h30</strong><b>G1</b><small>Plage Nauzan</small></div><div class="session session-g3"><strong>15h30 – 16h30</strong><b>G3</b><small>Plage Nauzan</small></div><div class="session session-g2"><strong>16h30 – 18h</strong><b>G2</b><small>Plage Nauzan</small></div><div class="session session-elite"><strong>19h – 20h30</strong><b>Masters</b><small>Plage Nauzan</small></div></div>
+            <div class="weekday"><header>Jeudi <small>2 séances</small></header><div class="session session-sport"><strong>14h – 17h</strong><b>Section sportive</b><small>Plage Nauzan</small></div><div class="session session-elite"><strong>18h30 – 20h</strong><b>Masters / G1</b><small>Plage Nauzan</small></div></div>
+            <div class="weekday"><header>Vendredi <small>2 séances</small></header><div class="session session-sport"><strong>16h – 18h</strong><b>Section sportive</b><small>Plage Nauzan</small></div><div class="session session-bnssa"><strong>20h – 21h30</strong><b>G1+ / Masters / BNSSA</b><small>Piscine</small></div></div>
+            <div class="weekday"><header>Samedi <small>4 séances</small></header><div class="session session-elite"><strong>14h – 15h30</strong><b>G1 / G1+ / Masters</b><small>Plage Nauzan</small></div><div class="session session-g3"><strong>15h30 – 16h30</strong><b>G3</b><small>Plage Nauzan</small></div><div class="session session-g2"><strong>16h30 – 18h</strong><b>G2</b><small>Plage Nauzan</small></div><div class="session session-elite"><strong>19h30 – 21h</strong><b>G1 / G1+ / Masters / BNSSA</b><small>Piscine</small></div></div>
           </div>
         </article>
-
-        <article class="planning-panel planning-panel--mi-saison">
-          <div class="planning-panel-head">
-            <div>
-              <p class="planning-kicker">Saison actuelle</p>
-              <h2>Planning mi-saison</h2>
-            </div>
-            <a class="planning-download-link" href="../../../picture/PLANNING MAI JUIN.pdf" download="planning-mai-juin-assra.pdf">Telecharger le PDF</a>
-          </div>
-          <div class="planning-pdf-shell">
-            <iframe class="planning-pdf" title="Planning Mai/Juin" src="../../../picture/PLANNING%20MAI%20JUIN.pdf#zoom=page-width&toolbar=0&navpanes=0&scrollbar=0"></iframe>
+        <article class="schedule-period schedule-period--mai">
+          <div class="period-pdf-head"><div><span class="schedule-kicker">Période sélectionnée</span><h2>Planning Mai / Juin</h2></div><a class="schedule-download" href="../../../picture/PLANNING MAI JUIN.pdf" download>⇩ Télécharger le PDF</a></div>
+          <div class="schedule-note"><div><span class="schedule-kicker">Période de validité</span><strong>Ce planning est valable du mercredi 13 mai au vendredi 26 juin.</strong></div></div>
+          <div class="weekday-grid weekday-grid--six">
+            <div class="weekday"><header>Lundi <small>3 séances</small></header><div class="session session-g3"><strong>17h15 – 18h15</strong><b>G3</b><small>Plage Nauzan</small></div><div class="session session-g2"><strong>18h15 – 19h15</strong><b>G2</b><small>Plage Nauzan</small></div><div class="session session-elite"><strong>19h15 – 20h45</strong><b>G1 / G1+ / Masters Elite</b><small>Plage Nauzan</small></div></div>
+            <div class="weekday"><header>Mardi <small>Pas de séance</small></header></div>
+            <div class="weekday"><header>Mercredi <small>4 séances</small></header><div class="session session-g1"><strong>14h – 15h30</strong><b>G1</b><small>Plage Nauzan</small></div><div class="session session-g3"><strong>15h30 – 16h30</strong><b>G3</b><small>Plage Nauzan</small></div><div class="session session-g2"><strong>16h30 – 18h</strong><b>G2</b><small>Plage Nauzan</small></div><div class="session session-elite"><strong>19h – 20h30</strong><b>Masters</b><small>Plage Nauzan</small></div></div>
+            <div class="weekday"><header>Jeudi <small>2 séances</small></header><div class="session session-sport"><strong>14h – 17h</strong><b>Section sportive</b><small>Plage Nauzan</small></div><div class="session session-elite"><strong>18h30 – 20h</strong><b>Masters / G1</b><small>Plage Pontillac</small></div></div>
+            <div class="weekday"><header>Vendredi <small>2 séances</small></header><div class="session session-sport"><strong>16h – 18h</strong><b>Section sportive</b><small>Plage Nauzan</small></div><div class="session session-elite"><strong>19h – 20h30</strong><b>G1 / G1+ / Masters Elite</b><small>Plage Nauzan</small></div></div>
+            <div class="weekday"><header>Samedi <small>4 séances</small></header><div class="session session-elite"><strong>9h30 – 12h30</strong><b>G1 / Masters Elite</b><small>Côte sauvage</small></div><div class="session session-elite"><strong>14h – 15h30</strong><b>G1 / G1+ / Masters</b><small>Plage Nauzan</small></div><div class="session session-g3"><strong>15h30 – 16h30</strong><b>G3</b><small>Plage Nauzan</small></div><div class="session session-g2"><strong>16h30 – 18h</strong><b>G2</b><small>Plage Nauzan</small></div></div>
           </div>
         </article>
-
-        <article class="planning-panel planning-panel--ete">
-          <div class="planning-panel-head">
-            <div>
-              <p class="planning-kicker">Saison actuelle</p>
-              <h2>Planning d'été</h2>
-            </div>
-            <a class="planning-download-link" href="../../../picture/PLANNING ETE.pdf" download="planning-ete-assra.pdf">Telecharger le PDF</a>
-          </div>
-          <div class="planning-pdf-shell">
-            <iframe class="planning-pdf" title="Planning d'été" src="../../../picture/PLANNING%20ETE.pdf#zoom=page-width&toolbar=0&navpanes=0&scrollbar=0"></iframe>
+        <article class="schedule-period schedule-period--ete">
+          <div class="schedule-note"><div><span class="schedule-kicker">Période de validité</span><strong>Ce planning est valable du lundi 6 juillet au mardi 1er septembre.</strong></div><div class="group-filter"><span>Mettre en avant mon groupe</span><div><b>■</b> Tous les groupes <b>■</b> G1 / Masters <b>■</b> G2 <b>■</b> G3</div></div></div>
+          <div class="weekday-grid">
+            <div class="weekday"><header>Lundi <small>2 séances</small></header><div class="session"><strong>9h – 11h</strong><b>G1 / Masters</b><small>Plage de Nauzan</small><p>Entraînement personnel, sans le coach</p></div><div class="session"><strong>19h30 – 21h</strong><b>G1 / Masters</b><small>Plage de Nauzan</small></div></div>
+            <div class="weekday"><header>Mardi <small>3 séances</small></header><div class="session"><strong>9h – 11h</strong><b>G1 / Masters</b><small>Plage de Nauzan</small><p>Entraînement personnel, sans le coach</p></div><div class="session session-alt"><strong>19h – 20h30</strong><b>G3</b><small>Plage de Nauzan</small></div><div class="session"><strong>19h30 – 21h</strong><b>G1 / Masters</b><small>Plage de Nauzan</small></div></div>
+            <div class="weekday"><header>Mercredi <small>1 séance</small></header><div class="session"><strong>9h – 11h</strong><b>G1 / Masters</b><small>Plage de Nauzan</small><p>Entraînement personnel, sans le coach</p></div></div>
+            <div class="weekday"><header>Jeudi <small>3 séances</small></header><div class="session"><strong>9h – 11h</strong><b>G1 / Masters</b><small>Plage de Nauzan</small><p>Entraînement personnel, sans le coach</p></div><div class="session session-alt"><strong>19h – 20h30</strong><b>G2</b><small>Plage de Nauzan</small></div><div class="session"><strong>19h30 – 21h</strong><b>G1 / Masters</b><small>Plage de Nauzan</small></div></div>
+            <div class="weekday"><header>Vendredi <small>2 séances</small></header><div class="session"><strong>9h – 11h</strong><b>G1 / Masters</b><small>Plage de Nauzan</small><p>Entraînement personnel, sans le coach</p></div><div class="session"><strong>19h30 – 21h</strong><b>G1 / Masters</b><small>Plage de Nauzan</small></div></div>
           </div>
         </article>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="schedule-info">
+      <span class="schedule-kicker">À savoir</span><h2>Informations pratiques</h2>
+      <div class="info-cards"><article><strong>Lieu des séances</strong><p>En été, les séances ont lieu sur la plage de Nauzan. [LIEUX DES AUTRES SAISONS À PRÉCISER]</p></article><article><strong>Séances du matin</strong><p>Les créneaux de 9h à 11h sont des entraînements personnels, sans le coach.</p></article><article><strong>Une question ?</strong><p>Pour connaître votre groupe ou votre créneau, contactez-nous.</p></article></div>
+    </section>
+
+    <section class="schedule-documents"><div><span class="schedule-kicker">Documents</span><h2>Plannings à télécharger</h2></div><div class="document-list"><a href="../../../picture/PLANNING ETE.pdf" download><span>▤</span><strong>Planning d'été<small>Du lundi 6 juillet au mardi 1er septembre</small></strong><b>Télécharger (PDF)</b></a><a href="../../../picture/PLANNING MAI JUIN.pdf" download><span>▤</span><strong>Planning mai / juin<small>Période de validité du planning mai / juin</small></strong><b>Télécharger (PDF)</b></a><a href="../../../picture/PLANNING AVRIL MAI.pdf" download><span>▤</span><strong>Planning avril / mai<small>Période de validité du planning avril / mai</small></strong><b>Télécharger (PDF)</b></a></div></section>
+  </main>
 
   <footer class="site-footer">
     <div>
@@ -153,5 +147,3 @@
   </footer>
 </body>
 </html>
-
-

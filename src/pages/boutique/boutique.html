@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../styles.css" />
 </head>
-<body>
+<body class="catalogue-page">
   <header class="site-header">
     <div class="brand">
       <img class="logo-img" src="../../../picture/logo_ASSRA.png" alt="ASSRA" />
@@ -36,7 +36,6 @@
           <a href="../secourisme/psc1.html">PSC1</a>
           <a href="../secourisme/pse1-pse2.html">PSE1/ PSE2</a>
           <a href="../secourisme/bnssa.html">BNSSA</a>
-          <a href="../secourisme/entreprise.html">Entreprise</a>
           <a href="../secourisme/infos-pratiques.html">Infos pratiques</a>
         </div>
       </div>
@@ -44,8 +43,7 @@
         <a href="../stage/stages-intensifs.html">Stage <span class="nav-caret" aria-hidden="true"></span></a>
         <div class="submenu">
           <a href="../stage/stages-intensifs.html">Stages d'été</a>
-          <a href="../stage/team-building.html">Team building</a>
-          <a href="../stage/sur-mesure.html">Sur-mesure</a>
+          <a href="../stage/sur-mesure.html">Autres stages</a>
         </div>
       </div>
       <a class="is-active" href="boutique.html">Boutique</a>
@@ -55,86 +53,90 @@
     <a class="btn btn-ghost" href="../contact.html">Nous rejoindre</a>
   </header>
 
-  <section class="page-section boutique-section">
-    <div class="boutique-intro">
-      <p class="eyebrow">Boutique ASSRA</p>
-      <h2>Textiles et equipements disponibles</h2>
-      <p>Retrouvez ici les articles principaux de la boutique. Les tailles et disponibilites peuvent etre precisees sur demande.</p>
-    </div>
+  <main class="catalogue">
+    <aside class="catalogue-sidebar">
+      <span>Nos produits</span>
+    </aside>
+    <section class="catalogue-content">
+      <div class="catalogue-intro">
+        <p class="eyebrow">Boutique ASSRA</p>
+        <h1>Textiles et équipements</h1>
+        <p>Retrouvez nos articles disponibles </p>
+      </div>
 
-    <div class="boutique-grid">
+    <div class="catalogue-grid boutique-grid">
       <article class="product-card product-card--featured">
         <div class="product-photo-slot product-photo-slot--portrait">
-          <span>Photo portrait</span>
+          <img src="" alt="Softshell ASSRA" />
         </div>
         <div class="product-badge">Textile</div>
         <h3>Softshell</h3>
         <p>Veste technique, chaude et resistante, ideale pour les sorties, competitions et entrainements en exterieur.</p>
+        <strong class="catalogue-price">Sur demande</strong>
       </article>
 
       <article class="product-card">
         <div class="product-photo-slot product-photo-slot--portrait">
-          <span>Photo portrait</span>
+          <img src="" alt="Bonnet de natation ASSRA" />
         </div>
         <div class="product-badge">Accessoire</div>
         <h3>Bonnet de natation</h3>
         <p>Bonnet confortable pour l'entrainement et la competition, avec un maintien adapte a la pratique reguliere.</p>
+        <strong class="catalogue-price">Sur demande</strong>
       </article>
 
       <article class="product-card">
         <div class="product-photo-slot product-photo-slot--portrait">
-          <span>Photo portrait</span>
+          <img src="" alt="Sweatshirt ASSRA" />
         </div>
         <div class="product-badge">Textile</div>
         <h3>Sweatshirt</h3>
         <p>Un sweat facile a porter au quotidien, parfait pour representer le club avant et apres les seances.</p>
+        <strong class="catalogue-price">Sur demande</strong>
       </article>
 
       <article class="product-card">
         <div class="product-photo-slot product-photo-slot--portrait">
-          <span>Photo portrait</span>
+          <img src="" alt="T-shirt ASSRA" />
         </div>
         <div class="product-badge">Textile</div>
         <h3>T-shirt</h3>
         <p>T-shirt leger et confortable pour les entrainements, les stages et les activites du club.</p>
+        <strong class="catalogue-price">Sur demande</strong>
       </article>
 
       <article class="product-card">
         <div class="product-photo-slot product-photo-slot--portrait">
-          <span>Photo portrait</span>
+          <img src="" alt="Poncho ASSRA" />
         </div>
         <div class="product-badge">Pratique</div>
         <h3>Poncho</h3>
         <p>Poncho dechange rapide pour rester au chaud entre deux passages a l'eau ou apres la baignade.</p>
+        <strong class="catalogue-price">Sur demande</strong>
       </article>
 
       <article class="product-card">
         <div class="product-photo-slot product-photo-slot--portrait">
-          <span>Photo portrait</span>
+          <img src="" alt="Maillot de natation femme ASSRA" />
         </div>
         <div class="product-badge">Maillot femme</div>
         <h3>Maillot de natation femme 1 piece</h3>
         <p>Coupe une piece adaptee a la nage, avec un maintien confortable et une bonne liberte de mouvement.</p>
+        <strong class="catalogue-price">Sur demande</strong>
       </article>
 
       <article class="product-card">
         <div class="product-photo-slot product-photo-slot--portrait">
-          <span>Photo portrait</span>
+          <img src="" alt="Maillot de natation homme ASSRA" />
         </div>
         <div class="product-badge">Maillot homme</div>
         <h3>Maillot de natation homme</h3>
         <p>Maillot pense pour l'entrainement regulier, resistant a l'eau et agreable a porter en bassin.</p>
+        <strong class="catalogue-price">Sur demande</strong>
       </article>
     </div>
-  </section>
-
-  <section class="page-section notice boutique-notice">
-    <div>
-      <h3>Besoin d'une taille ou d'un renseignement ?</h3>
-      <p>Nous pouvons vous guider sur le choix des tailles et des disponibilites.</p>
-    </div>
-    <a class="btn btn-outline" href="../contact.html">Nous contacter</a>
-  </section>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div>
@@ -165,5 +167,4 @@
   </footer>
 </body>
 </html>
-
 
